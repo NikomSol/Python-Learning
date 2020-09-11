@@ -39,9 +39,9 @@ df = pd.DataFrame(data,columns=['a','b'])
 # print(df['a'][1])
 
 # DF from dict
-data = {'a':[[1,1],1], 'b':[0,1]}
+data = {'a':[[1,1],[1,2]], 'b':[[0,2],1]}
 df = pd.DataFrame(data=data)
-# print(df)
+print([df['a'][i][1] for i in df.index])
 
 data = {'a': [np.array([1,2,3]),2],'b': [np.array([1,1]),3]}
 df = pd.DataFrame(data=data)
@@ -55,8 +55,5 @@ data = {'a': np.array([1,1]),'b': np.array([3,1])}
 df = pd.DataFrame()
 for i, key in enumerate(data.keys()):
     df.insert(i, key, [data[key]])
-
 df.loc[4] = data
-
-
-print(df)
+# print(df)
