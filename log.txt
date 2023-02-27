@@ -1,0 +1,16 @@
+INFO:root:b'aaInformational message\n'
+ERROR:root:An error has happened! dsd
+ERROR:root:11
+ERROR:root:Uncaught exception:
+Traceback (most recent call last):
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2018.1.4\helpers\pydev\pydevd.py", line 1664, in <module>
+    main()
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2018.1.4\helpers\pydev\pydevd.py", line 1658, in main
+    globals = debugger.run(setup['file'], None, None, is_module)
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2018.1.4\helpers\pydev\pydevd.py", line 1068, in run
+    pydev_imports.execfile(file, globals, locals)  # execute the script
+  File "C:\Program Files\JetBrains\PyCharm Community Edition 2018.1.4\helpers\pydev\_pydev_imps\_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "D:/Work/Programming/Python-Learning/log.py", line 24, in <module>
+    assert 1==0
+AssertionError
